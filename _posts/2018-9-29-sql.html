@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>2018-9-29-sql.html</title>
+
+</head>
+
+<body>
+
+<hr />
+
+<p>layout: post
+title: sql语言四种类别</p>
+
+<h2>tags: [ddl, sql]</h2>
+
+<h3>DDL （Data Definition Language）数据库定义语言</h3>
+
+<p>用于定于数据库的三级结构：</p>
+
+<pre><code>- 外模式
+- 概念模式
+- 内模式
+- 相互之间的映像
+</code></pre>
+
+<p>定义数据的完整性，安全控制等约束</p>
+
+<p>DDL不需要commit</p>
+
+<pre><code>- CREATE
+- ALTER
+- DROP
+- TRUNCATE
+- COMMENT
+- RENAME
+</code></pre>
+
+<h3>DML（Data Manipulation Language）数据操纵语言</h3>
+
+<p>由DBMS提供， 用于让用户和程序员使用，实现对数据库中数据的操作。
+DML分成 =交互型DML= 和 =嵌入型DML= 两类。
+依据语言的级别，DML</p>
+
+<pre><code>- SELECT
+- INSERT
+- UPDATE
+- DELETE
+- MERGE
+- CALL
+- EXPLAIN PLAN
+- LOCK TABLE
+</code></pre>
+
+<h3>DCL（Data Control Language）数据库控制语言 授权，角色控制等</h3>
+
+<pre><code>- GRANT   授权
+- REVOKE  取消授权
+</code></pre>
+
+<h3>TCL （Transaction Control Language）事务控制语言</h3>
+
+<pre><code>- SAVEPOINT
+- ROLLBACK
+- SET TRANSACTION
+</code></pre>
+
+<h3>SQL主要分成四部分:</h3>
+
+<ol>
+<li>数据定义。   (SQL DDL) 用于定义sql模式、基础表、视图和索引的创建和撤销操作</li>
+<li>数据操纵。 （SQL DML）数据操纵分成数据查询和数据更新两类。数据更新又分成插入、删除和修改三种操作。</li>
+<li>数据控制。   包括对基本表和视图的授权，完整性规则的描述，事务控制等内容。</li>
+<li>嵌入式sql的使用规范。 涉及到SQL语句嵌入在宿主语言程序中使用的规则。</li>
+</ol>
+
+</body>
+</html>
